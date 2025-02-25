@@ -1,0 +1,63 @@
+<!-- HTML: Блоки с отзывами -->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы | Кафе АБЗАЦ</title>
+    <link rel="stylesheet" href="../styles/style_reviews.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">
+        <span class="small-text">Кафе</span>
+        АБЗАЦ
+      </a>
+      <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">☰</div>
+        <nav class="mobile-nav">
+          <div class="close-icon" onclick="toggleMenu()">✖</div>
+          <a href="../index.html" class="nav-item">ГЛАВНАЯ</a>
+          <a href="../pages/menu.html" class="nav-item">НАПИТКИ</a>
+          <a href="../pages/contacts.html" class="nav-item">КОНТАКТЫ</a>
+          <a href="../pages/about_us.html" class="nav-item">О НАС</a>
+          <a href="../pages/reviews.html" class="nav-item">ОТЗЫВЫ</a>
+        </nav>
+      </div>
+      <nav class="navigation">
+        <a href="../index.html" class="nav-item">ГЛАВНАЯ</a>
+        <a href="../pages/menu.html" class="nav-item">НАПИТКИ</a>
+        <a href="../pages/contacts.html" class="nav-item">КОНТАКТЫ</a>
+        <a href="../pages/about_us.html" class="nav-item">О НАС</a>
+        <a href="../pages/reviews.html" class="nav-item">ОТЗЫВЫ</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="reviews-title">Отзывы наших посетителей</h1>
+      <div class="reviews-container">
+        <section class="review-block">
+          <h2>Анна</h2>
+          <p>Отличное кафе, вкусный кофе!</p>
+          <span class="rating">★★★★★</span>
+        </section>
+        <section class="review-block">
+          <h2>Иван</h2>
+          <p>Очень уютное место, рекомендую!</p>
+          <span class="rating">★★★★☆</span>
+        </section>
+        <section class="review-block">
+          <h2>Мария</h2>
+          <p>Прекрасное обслуживание, вернусь снова.</p>
+          <span class="rating">★★★★★</span>
+        </section>
+        <section class="review-block">
+          <h2>Алексей</h2>
+          <p>Все понравилось, особенно персонал</p>
+          <span class="rating">★★★★★</span>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+.logo,
+.nav-item {
+    text-decoration: none
+}
+
+.logo,
+.schedule-list li,
+header,
+nav {
+    display: flex
+}
+
+.burger-icon,
+.close-icon {
+    cursor: pointer;
+    color: #fff
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    background: url('../assets/background.png') center center/cover no-repeat fixed #201e1f;
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+    box-sizing: border-box
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #201e1f;
+    border-bottom: 1px solid #fff;
+    height: 70px
+}
+
+.logo {
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    align-items: baseline;
+    color: #fff
+}
+
+.small-text {
+    font-size: 24px;
+    margin-right: 5px
+}
+
+nav {
+    justify-content: center;
+    align-items: center
+}
+
+.nav-item {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 10px
+}
+
+.close-icon:hover,
+.nav-item:hover {
+    color: #f4a261
+}
+
+.schedule-and-map-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    align-items: stretch;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box
+}
+
+.map-container,
+.schedule-container {
+    background: #84492b;
+    padding: 35px;
+    border-radius: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+    width: 100%;
+    flex: 1;
+    height: 500px;
+    box-sizing: border-box
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px
+}
+
+@media (max-width:768px) {
+    body {
+        overflow-x: hidden
+    }
+
+    .schedule-and-map-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 20px;
+        padding: 0 10px
+    }
+
+    .map-container,
+    .schedule-container {
+        max-width: 100%;
+        height: 300px
+    }
+
+    .map-container iframe {
+        height: 100%
+    }
+
+    .contacts a,
+    .schedule-list li,
+    .weekend {
+        font-size: 16px
+    }
+
+    .address {
+        font-size: 14px
+    }
+
+    .address,
+    .contacts,
+    .social-icons {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box
+    }
+}
+
+.schedule-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0
+}
+
+.schedule-list li {
+    justify-content: space-between;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding: 5px 0
+}
+
+.contacts a,
+.social-icons a,
+.weekend {
+    display: inline-block;
+    text-decoration: none
+}
+
+.contacts a,
+.weekend {
+    color: #fff;
+    font-size: 18px;
+    transition: transform .3s, text-shadow .3s
+}
+
+.burger-icon,
+.burger-menu {
+    display: none
+}
+
+.contacts a:hover {
+    transform: scale(1.05)
+}
+
+.address {
+    font-size: 16px;
+    margin-top: 10px
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    object-fit: contain;
+    object-position: center;
+    transition: transform .3s
+}
+
+.burger-icon:hover,
+.social-icons a:hover img {
+    transform: scale(1.1)
+}
+
+.burger-icon {
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: transform .3s
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #201e1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: right .3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(255, 255, 255, .2)
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    transition: background .3s
+}
+
+.mobile-nav a:hover {
+    background: #f4a261
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px
+}
+
+@media (max-width:768px) {
+    .navigation {
+        display: none
+    }
+
+    .burger-icon,
+    .burger-menu {
+        display: block
+    }
+}
+
+.menu-open {
+    right: 0 !important
+}

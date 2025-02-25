@@ -1,0 +1,188 @@
+.logo,
+.nav-item,
+body {
+    color: #fff
+}
+
+.logo,
+.mobile-nav a,
+.nav-item {
+    text-decoration: none
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    background: url('../assets/background.png') center center/cover no-repeat fixed #201e1f;
+    text-align: center;
+    overflow-x: hidden
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #201e1f;
+    border-bottom: 1px solid #fff;
+    height: 70px
+}
+
+.drink-category,
+.logo {
+    display: flex;
+    flex-direction: column
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    align-items: baseline
+}
+
+.small-text {
+    font-size: 24px;
+    margin-right: 5px
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.nav-item {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 10px
+}
+
+.close-icon:hover,
+.nav-item:hover {
+    color: #f4a261
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px
+}
+
+.drink-category,
+.mobile-nav a {
+    padding: 15px;
+    text-align: center;
+    color: #fff
+}
+
+.drink-category {
+    width: 320px;
+    height: 220px;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    font-weight: 700;
+    transition: transform .3s, box-shadow .3s
+}
+
+.burger-icon,
+.burger-menu {
+    display: none
+}
+
+.drink-category:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, .2)
+}
+
+.cold-drinks {
+    background-image: url('../assets/soda1.png')
+}
+
+.milk-shakes {
+    background-image: url('../assets/cappuccino1\ 1.png')
+}
+
+.carbonated-drinks {
+    background-image: url('../assets/vitamina\ manga\ 1.png')
+}
+
+.coffee-drinks {
+    background-image: url('../assets/chocolate\ 1.png')
+}
+
+.teas {
+    background-image: url('../assets/drinks\ coqueteu\ 1.png')
+}
+
+.coffee {
+    background-image: url('../assets/copo\ 1.png')
+}
+
+.burger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: transform .3s
+}
+
+.burger-icon:hover {
+    transform: scale(1.1)
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #201e1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: right .3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(255, 255, 255, .2)
+}
+
+.mobile-nav a {
+    font-size: 18px;
+    width: 100%;
+    transition: background .3s
+}
+
+.mobile-nav a:hover {
+    background: #f4a261
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff
+}
+
+@media (max-width:768px) {
+    .navigation {
+        display: none
+    }
+
+    .burger-icon,
+    .burger-menu {
+        display: block
+    }
+}
+
+.menu-open {
+    right: 0 !important
+}

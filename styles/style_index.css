@@ -1,0 +1,292 @@
+.logo,
+.nav-item {
+    color: #fff;
+    text-decoration: none
+}
+
+.content,
+.logo,
+header,
+nav {
+    display: flex
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    background: url('../assets/background.png') center center/cover no-repeat fixed #201e1f;
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #201e1f;
+    border-bottom: 1px solid #fff;
+    height: 70px
+}
+
+.logo {
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    align-items: baseline
+}
+
+.small-text {
+    font-size: 24px;
+    margin-right: 5px
+}
+
+nav {
+    justify-content: center;
+    align-items: center
+}
+
+.nav-item {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 10px
+}
+
+.close-icon:hover,
+.nav-item:hover {
+    color: #f4a261
+}
+
+.content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    padding: 50px 5%
+}
+
+.menu-button,
+.social-icons a {
+    display: inline-block;
+    text-decoration: none
+}
+
+.contact-us,
+.welcome-text {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    width: 100%
+}
+
+.menu-button {
+    background: #84482b;
+    border-radius: 65px;
+    width: 350px;
+    height: 73px;
+    text-align: center;
+    line-height: 73px;
+    transition: transform .3s, box-shadow .3s
+}
+
+.burger-icon,
+.contact-number,
+.social-icons img {
+    transition: transform .3s
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, .2)
+}
+
+.menu-button .button-text {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500
+}
+
+.contact-info {
+    display: grid;
+    gap: 20px
+}
+
+.contact-item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+    align-items: center
+}
+
+.burger-icon,
+.burger-menu {
+    display: none
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px
+}
+
+.contact-number {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none
+}
+
+.contact-number:hover {
+    transform: scale(1.05)
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    object-fit: contain;
+    object-position: center
+}
+
+.burger-icon:hover,
+.social-icons a:hover img {
+    transform: scale(1.1)
+}
+
+.burger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #201e1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: right .3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(255, 255, 255, .2)
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    transition: background .3s
+}
+
+.mobile-nav a:hover {
+    background: #f4a261
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff
+}
+
+@media (max-width:768px) {
+    .navigation {
+        display: none
+    }
+
+    .burger-icon,
+    .burger-menu {
+        display: block
+    }
+}
+
+.menu-open {
+    right: 0 !important
+}
+
+.reservation-form {
+    position: absolute;
+    top: 150px;
+    right: 5%;
+    background: #84492b;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+    width: 100%
+}
+
+.reservation-form h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px
+}
+
+.reservation-form input,
+.reservation-form textarea {
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: 0;
+    background: rgba(255, 255, 255, .1);
+    color: #fff
+}
+
+.reservation-form input::placeholder,
+.reservation-form textarea::placeholder {
+    color: rgba(255, 255, 255, .7)
+}
+
+.reservation-form button {
+    width: 100%;
+    background: #f4a261;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s
+}
+
+.reservation-form button:hover {
+    background: #e76f51;
+    transform: scale(1.05)
+}
+
+@media (max-width:1024px) {
+    .reservation-form {
+        position: static;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 350px;
+        padding: 15px
+    }
+
+    .reservation-form h2 {
+        font-size: 20px
+    }
+
+    .reservation-form input,
+    .reservation-form textarea {
+        font-size: 14px
+    }
+
+    .reservation-form button {
+        font-size: 16px
+    }
+}

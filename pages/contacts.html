@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты | Кафе АБЗАЦ</title>
+    <link rel="stylesheet" href="../styles/style_contacts.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">
+        <span class="small-text">Кафе</span>
+        АБЗАЦ
+      </a>
+      <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">☰</div>
+        <nav class="mobile-nav">
+          <div class="close-icon" onclick="toggleMenu()">✖</div>
+          <a href="../index.html" class="nav-item">ГЛАВНАЯ</a>
+          <a href="../pages/menu.html" class="nav-item">НАПИТКИ</a>
+          <a href="../pages/contacts.html" class="nav-item">КОНТАКТЫ</a>
+          <a href="../pages/about_us.html" class="nav-item">О НАС</a>
+          <a href="../pages/reviews.html" class="nav-item">ОТЗЫВЫ</a>
+        </nav>
+      </div>
+      <nav class="navigation">
+        <a href="../index.html" class="nav-item">ГЛАВНАЯ</a>
+        <a href="../pages/menu.html" class="nav-item">НАПИТКИ</a>
+        <a href="../pages/contacts.html" class="nav-item">КОНТАКТЫ</a>
+        <a href="../pages/about_us.html" class="nav-item">О НАС</a>
+        <a href="../pages/reviews.html" class="nav-item">ОТЗЫВЫ</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contacts-container">
+        <!-- Блок с картой и расписанием -->
+        <section class="schedule-and-map-wrapper">
+          <div class="map-container">
+            <!-- Вставка карты Google -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.506459238243!2d27.545904876283554!3d53.90497563277948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfec60d03cad%3A0xb1447193bdcde628!2z0YPQuy4g0KDQsNC60L7QstGB0LrQsNGPIDE4LCDQnNC40L3RgdC6LCDQnNC40L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sby!4v1740491911580!5m2!1sru!2sby"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Контактная информация справа -->
+          <div class="schedule-container">
+            <h1>
+              Хотите с нами познакомиться? Смотрите наши
+              <strong>часы работы</strong>:
+            </h1>
+
+            <ul class="schedule-list">
+              <li><span>Понедельник</span> <span>8:00 - 18:00</span></li>
+              <li><span>Вторник</span> <span>8:00 - 18:00</span></li>
+              <li><span>Среда</span> <span>8:00 - 18:00</span></li>
+              <li><span>Четверг</span> <span>8:00 - 18:00</span></li>
+              <li><span>Пятница</span> <span>8:00 - 23:00</span></li>
+            </ul>
+
+            <p class="weekend">Суббота и воскресенье: c 10:00 до 23:00</p>
+
+            <p class="contacts">
+              <a href="tel:+375296730130"
+                ><strong>+375 (29) 673-01-30</strong></a
+              >
+              <a href="tel:+375297890977"
+                ><strong>+375 (29) 789-09-77</strong></a
+              >
+            </p>
+            <div class="social-icons">
+              <a href="https://t.me/YuriySerov" target="_blank">
+                <img
+                  src="../assets/telegram.png"
+                  alt="Telegram"
+                  class="social-icons"
+                />
+              </a>
+              <a href="viber://chat?number=%2B375296730130">
+                <img
+                  src="../assets/viber.png"
+                  alt="Viber"
+                  class="social-icons"
+                />
+              </a>
+              <a href="https://www.instagram.com/yourusername" target="_blank">
+                <img
+                  src="../assets/instagram.png"
+                  alt="Instagram"
+                  class="social-icons"
+                />
+              </a>
+            </div>
+            <p class="address">
+              📍 г. Минск, Раковская улица, 18, 220004, цокольный этаж
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

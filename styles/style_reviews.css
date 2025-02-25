@@ -1,0 +1,200 @@
+.logo,
+header,
+nav {
+    display: flex
+}
+
+.logo,
+.mobile-nav a,
+.nav-item {
+    text-decoration: none
+}
+
+.mobile-nav a,
+.reviews-title,
+body {
+    text-align: center
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    background: url('../assets/background.png') center center/cover no-repeat fixed #201e1f;
+    color: #fff;
+    overflow-x: hidden
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #201e1f;
+    border-bottom: 1px solid #fff;
+    height: 70px
+}
+
+.reviews-title {
+    font-size: 28px;
+    color: #f4a261;
+    margin-top: 30px
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px
+}
+
+.review-block {
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(90, 46, 30, .9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, .2);
+    transition: transform .3s ease-in-out
+}
+
+.review-block:hover {
+    transform: scale(1.05)
+}
+
+.review-block h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #f4a261
+}
+
+.review-block p {
+    font-size: 16px;
+    margin: 10px 0
+}
+
+.rating {
+    font-size: 18px;
+    color: gold
+}
+
+.logo {
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    align-items: baseline;
+    color: #fff
+}
+
+.burger-icon,
+.burger-menu {
+    display: none
+}
+
+.small-text {
+    font-size: 24px;
+    margin-right: 5px
+}
+
+nav {
+    justify-content: center;
+    align-items: center
+}
+
+.nav-item {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 10px
+}
+
+.close-icon:hover,
+.nav-item:hover {
+    color: #f4a261
+}
+
+@media (max-width:480px) {
+    .logo {
+        font-size: 30px
+    }
+
+    nav {
+        flex-direction: column
+    }
+
+    .nav-item {
+        font-size: 18px;
+        margin: 10px 0
+    }
+
+    .review-block {
+        padding: 15px
+    }
+}
+
+.burger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: transform .3s
+}
+
+.burger-icon:hover {
+    transform: scale(1.1)
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #201e1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: right .3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(255, 255, 255, .2)
+}
+
+.mobile-nav a {
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    transition: background .3s
+}
+
+.mobile-nav a:hover {
+    background: #f4a261
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff
+}
+
+@media (max-width:768px) {
+    .navigation {
+        display: none
+    }
+
+    .burger-icon,
+    .burger-menu {
+        display: block
+    }
+}
+
+.menu-open {
+    right: 0 !important
+}
