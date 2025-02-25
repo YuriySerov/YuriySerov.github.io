@@ -1,1 +1,135 @@
-Привет, мир
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная страница | Кафе АБЗАЦ</title>
+    <link rel="stylesheet" href="styles/style_index.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../WEBSITE/index.html" class="logo">
+        <span class="small-text">Кафе</span>
+        АБЗАЦ
+      </a>
+      <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">☰</div>
+        <nav class="mobile-nav">
+          <div class="close-icon" onclick="toggleMenu()">✖</div>
+          <a href="../WEBSITE/index.html" class="nav-item">ГЛАВНАЯ</a>
+          <a href="pages/menu.html" class="nav-item">НАПИТКИ</a>
+          <a href="pages/contacts.html" class="nav-item">КОНТАКТЫ</a>
+          <a href="pages/about_us.html" class="nav-item">О НАС</a>
+          <a href="pages/reviews.html" class="nav-item">ОТЗЫВЫ</a>
+        </nav>
+      </div>
+      <nav class="navigation">
+        <a href="../WEBSITE/index.html" class="nav-item">ГЛАВНАЯ</a>
+        <a href="pages/menu.html" class="nav-item">НАПИТКИ</a>
+        <a href="pages/contacts.html" class="nav-item">КОНТАКТЫ</a>
+        <a href="pages/about_us.html" class="nav-item">О НАС</a>
+        <a href="pages/reviews.html" class="nav-item">ОТЗЫВЫ</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <div class="welcome-text">
+        Добро пожаловать в кафе АБЗАЦ,<br />
+        где каждая чашка кофе <br />рассказывает богатую историю <br />и полна
+        страсти!
+      </div>
+
+      <div class="menu-button">
+        <a href="pages/menu.html" class="menu-button">
+          <span class="button-text">НАШЕ МЕНЮ</span>
+        </a>
+      </div>
+
+      <div class="contact-us">
+        Оставить сообщение<br />
+        или позвоните нам!
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <img
+            class="contact-icon"
+            src="assets/whatsup.png"
+            alt="WhatsApp Icon"
+          />
+          <a class="contact-number" href="tel:+375297890977"
+            >+375 (29) 789-09-77</a
+          >
+        </div>
+        <div class="contact-item">
+          <img
+            class="contact-icon"
+            src="assets/whatsup.png"
+            alt="WhatsApp Icon"
+          />
+          <a class="contact-number" href="tel:+375296730130"
+            >+375 (29) 673-01-30</a
+          >
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://t.me/YuriySerov" target="_blank">
+          <img src="assets/telegram.png" alt="Telegram" class="social-icons" />
+        </a>
+        <a href="viber://chat?number=%2B375296730130">
+          <img src="assets/viber.png" alt="Viber" class="social-icons" />
+        </a>
+        <a href="https://www.instagram.com/yourusername" target="_blank">
+          <img
+            src="assets/instagram.png"
+            alt="Instagram"
+            class="social-icons"
+          />
+        </a>
+      </div>
+
+      <!-- Форма заказа звонка -->
+      <!-- Форма заказа звонка -->
+      <div class="reservation-form">
+        <h2>Заказать звонок</h2>
+        <form action="submit_form.php" method="POST">
+          <input type="text" name="name" placeholder="Ваше имя" required />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Ваш номер телефона"
+            required
+            inputmode="numeric"
+            pattern="[0-9+ ]{10,17}"
+            title="Введите только цифры и +"
+          />
+          <input
+            type="text"
+            name="comment"
+            placeholder="Комментарий (необязательно)"
+          />
+          <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+    <script>
+      // Обработчик отправки формы
+      document
+        .querySelector(".reservation-form form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Отменяет стандартное поведение формы
+
+          // Выводим сообщение об успешной отправке
+          alert("Заявка успешно отправлена!");
+
+          // Здесь вы можете добавить код для отправки формы, если нужно, например, с помощью AJAX
+          // После отправки формы можно очистить поля, если нужно:
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
