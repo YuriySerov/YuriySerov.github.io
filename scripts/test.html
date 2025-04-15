@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Напитки</title>
+    <style>
+      body {
+        background: #333;
+        color: #fff;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+      }
+
+      .drink-category {
+        width: 300px;
+        height: 200px;
+        background: #555;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+      }
+
+      #scrollToTopBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        display: none;
+        background-color: #f4a261;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="drink-category">Напиток 1</div>
+      <div class="drink-category">Напиток 2</div>
+      <div class="drink-category">Напиток 3</div>
+      <div class="drink-category">Напиток 4</div>
+      <div class="drink-category">Напиток 5</div>
+    </div>
+
+    <div id="loadTrigger"></div>
+    <button id="scrollToTopBtn">↑</button>
+
+    <script src="script_scroll_menu.js"></script>
+  </body>
+</html>

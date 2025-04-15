@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="styles/style_index.css" />
   </head>
   <body>
-
-    
     <header>
       <a href="index.html" class="logo">
         <span class="small-text">Кафе</span>
@@ -122,9 +120,18 @@
           <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
         </form>
       </div>
+      <div class="container" id="container">
+        <h1>Подгрузка данных при прокрутке</h1>
+        <div id="items"></div>
+        <div class="loading" id="loading">Загрузка...</div>
+        <div id="loadTrigger"></div>
+      </div>
+      <button class="scroll-to-top" id="scrollToTopBtn">↑</button>
     </main>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/script_button.js"></script>
+    <script src="scripts/script_scroll.js"></script>
     <script>
       // Обработчик отправки формы
       document

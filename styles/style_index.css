@@ -227,7 +227,8 @@ nav {
     max-width: 350px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
-    width: 100%
+    width: 100%;
+    z-index: -1;
 }
 
 .reservation-form h2 {
@@ -292,4 +293,79 @@ nav {
     .reservation-form button {
         font-size: 16px
     }
+}
+
+
+.container {
+    min-height: 100vh;
+    z-index: -1;
+    /* Контейнер под фоном */
+    /* чтобы страница не была короткой */
+}
+
+
+.item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.loading {
+    text-align: center;
+    margin: 20px 0;
+    display: none;
+}
+
+#items {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#container h1 {
+    margin-top: 60px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    /* Создаем круглую кнопку */
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 0;
+    width: 60px;
+    /* Устанавливаем размер кнопки */
+    height: 60px;
+    /* Устанавливаем размер кнопки */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Добавляем тень */
+}
+
+.scroll-to-top:hover {
+    background-color: #e76f51;
+}
+
+.scroll-to-top:focus {
+    outline: none;
+    /* Убираем обводку при фокусе */
 }
